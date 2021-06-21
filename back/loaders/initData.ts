@@ -26,6 +26,68 @@ const initData = [
     schedule: '30 7 * * *',
     status: CrontabStatus.idle,
   },
+  {
+    name: '关注有礼单独仓库',
+    command: 'ql raw https://raw.githubusercontent.com/curtinlv/JD-Script/main/getFollowGifts/jd_getFollowGift.py',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: 'ddo（hyzaw）仓库',
+    command: 'ql repo https://hub.fastgit.org/hyzaw/scripts.git "ddo_"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: 'Ariszy（Zhiyi-N）仓库',
+    command: 'ql repo https://hub.fastgit.org/Ariszy/Private-Script.git "JD"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: 'zoopanda（动物园）仓库',
+    command: 'ql repo https://hub.fastgit.org/zooPanda/zoo.git "zoo"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: '混沌仓库',
+    command: 'ql repo https://hub.fastgit.org/whyour/hundun.git "quanx" "tokens|caiyun|didi|donate|fold|Env"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: 'star261仓库',
+    command: 'ql repo https://hub.fastgit.org/star261/jd.git "scripts" "code"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: 'ZCY01仓库',
+    command: 'ql repo https://hub.fastgit.org/ZCY01/daily_scripts.git "jd_"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: '龙猪猪仓库',
+    command: 'ql repo https://hub.fastgit.org/longzhuzhu/nianyu.git "qx" “main”',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: '温某人仓库',
+    command: 'ql repo https://hub.fastgit.org/Wenmoux/scripts.git "jd" "" "" "wen"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  {
+    name: '柠檬代维护lxk仓库',
+    command: 'ql repo https://hub.fastgit.org/panghu999/jd_scripts.git "jd_|jx_|getJDCookie" "activity|backUp" "^jd[^_]|USER"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
+  
+  
 ];
 
 export default async () => {
