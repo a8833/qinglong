@@ -86,7 +86,12 @@ const initData = [
     schedule: '0 8,12,16,20,0 * * *',
     status: CrontabStatus.idle,
   },
-  
+  {
+    name: 'i-chenzi仓库',
+    command: 'ql repo https://gitee.com/heisedetian/i-chenzhe.git "i-chenzhe|normal|member|car" "backup"',
+    schedule: '0 8,12,16,20,0 * * *',
+    status: CrontabStatus.idle,
+  },
   
 ];
 
