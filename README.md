@@ -14,12 +14,12 @@ python和javaScript的定时任务管理面板
   
 ```
   docker run -dit \
-   -v $PWD/ql2/config:/ql/config \
-   -v $PWD/ql2/log:/ql/log \
-   -v $PWD/ql2/db:/ql/db \
+   -v $pwd/qq1/ql/config:/ql/config \
+   -v $pwd/qq1/ql/log:/ql/log \
+   -v $pwd/qq1/ql/db:/ql/db \
    -p 5700:5700 \
-   --name ql2 \
-   --hostname ql2 \
+   --name ql1 \
+   --hostname ql1 \
    --restart always \
    limoe/qinglong:latest
  ```
